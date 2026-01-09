@@ -6,16 +6,14 @@ This repository contains sample implementations of contracts for [Centrifuge](ht
 
 The Centrifuge Protocol is built on an immutable core protocol architecture, with a modular design that enables customized products to be built on top of it.
 
-The immutable core includes:
-* Hub: Central orchestration layer for pool management, accounting, and share class coordination
-* Spoke: Local registry and integration point for cross-chain deployments
-
 Built on top of the immutable core, the protocol supports various extension points that enable customization without modifying core contracts:
-* Adapters: Cross-chain messaging adapters
-* Hooks: Transfer hook implementations for custom compliance requirements
-* Hub Managers: Management contracts for NAV, order management, investor management, onchain accounting, and more
-* Balance Sheet Managers: ERC20/ERC6909 token management per spoke network
-* Valuations: Pricing for ERC20/ERC6909 tokens in the protocol
+* [Cross-chain Adapters](https://github.com/centrifuge/protocol/tree/main/src/adapters): Cross-chain messaging adapters
+* [Hooks](https://github.com/centrifuge/protocol/tree/main/src/hooks): Transfer hook implementations for custom compliance requirements
+* [Hub Managers](https://github.com/centrifuge/protocol/tree/main/src/managers/hub): Management contracts for NAV, order management, investor management, onchain accounting, and more
+* [Balance Sheet Managers](https://github.com/centrifuge/protocol/tree/main/src/managers/spoke): ERC20/ERC6909 token management per spoke network
+* [Valuations](https://github.com/centrifuge/protocol/tree/main/src/valuations): Pricing for ERC20/ERC6909 tokens in the protocol
+
+More details about the modularity of the protocol can be found in the [documentation](https://docs.centrifuge.io/developer/protocol/features/modularity/).
 
 ## `DepositRedeemFeeManager` (Hub Manager)
 
