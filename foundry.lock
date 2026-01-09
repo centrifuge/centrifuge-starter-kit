@@ -3,9 +3,9 @@
     "rev": "17a9b2398a7d629931dc66a168a098d051d53dc6"
   },
   "lib/protocol": {
-    "tag": {
-      "name": "v3.0.1",
-      "rev": "7ca5819788f6d28d8481932b237951c1ffb7ff3b"
+    "branch": {
+      "name": "main",
+      "rev": "88ccb68bcd653a326a54d1a724a06f3c5dbc5e6f"
     }
   }
 }

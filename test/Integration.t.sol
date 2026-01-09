@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-import {PoolId} from "centrifuge/src/common/types/PoolId.sol";
+import {PoolId} from "centrifuge/src/core/types/PoolId.sol";
 
 import {CentrifugeIntegrationTestWithUtils} from "centrifuge/test/integration/Integration.t.sol";
 
@@ -14,8 +14,8 @@ contract IntegrationTest is CentrifugeIntegrationTestWithUtils {
         super.setUp();
 
         poolId = hubRegistry.poolId(LOCAL_CENTRIFUGE_ID, 1);
-        vm.prank(ADMIN);
-        guardian.createPool(poolId, HUB_MANAGER, USD_ID);
+        vm.prank(address(adminSafe));
+        opsGuardian.createPool(poolId, HUB_MANAGER, USD_ID);
 
         // HUB_MANAGER now fully controls the pool
     }
