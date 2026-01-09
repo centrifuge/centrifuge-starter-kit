@@ -6,8 +6,8 @@ This repository contains sample implementations of contracts for [Centrifuge](ht
 
 The Centrifuge Protocol is built on an immutable core protocol architecture, with a modular design that enables customized products to be built on top of it.
 
-Built on top of the immutable core, the protocol supports various extension points that enable customization without modifying core contracts:
-* [Cross-chain Adapters](https://github.com/centrifuge/protocol/tree/main/src/adapters): Cross-chain messaging adapters
+Built on top of the immutable core, the protocol supports various extension points that enable customization without modifying core contracts, including:
+* [Adapters](https://github.com/centrifuge/protocol/tree/main/src/adapters): Cross-chain messaging adapters
 * [Hooks](https://github.com/centrifuge/protocol/tree/main/src/hooks): Transfer hook implementations for custom compliance requirements
 * [Hub Managers](https://github.com/centrifuge/protocol/tree/main/src/managers/hub): Management contracts for NAV, order management, investor management, onchain accounting, and more
 * [Balance Sheet Managers](https://github.com/centrifuge/protocol/tree/main/src/managers/spoke): ERC20/ERC6909 token management per spoke network
